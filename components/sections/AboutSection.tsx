@@ -161,7 +161,7 @@ export default function AboutSection() {
         {/* Segment 1: Vertical down from dot */}
         <div
           className="absolute left-1/2 -translate-x-1/2 w-px bg-[#1a1a1a]"
-          style={{ top: "32px", height: "70px" }}
+          style={{ height: "100px" }}
         />
         {/* Segment 2: Horizontal to right */}
         <div
@@ -191,7 +191,7 @@ export default function AboutSection() {
         <div
           ref={segment1Ref}
           className="absolute left-1/2 -translate-x-1/2 w-px bg-[#f97316]"
-          style={{ top: "32px", height: "70px" }}
+          style={{ height: "100px" }}
         />
         {/* Segment 2: Horizontal to right */}
         <div

@@ -38,6 +38,7 @@ export default function ProjectSection() {
   const headerRef = useRef<HTMLDivElement>(null);
   const timelineContainerRef = useRef<HTMLDivElement>(null);
   const timelineLineRef = useRef<HTMLDivElement>(null);
+  const timelineExtensionRef = useRef<HTMLDivElement>(null); // Extension line to AboutSection
   const filterRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
@@ -78,6 +79,24 @@ export default function ProjectSection() {
           },
         }
       );
+
+      // Timeline extension animation - continues to AboutSection
+      if (timelineExtensionRef.current) {
+        gsap.fromTo(
+          timelineExtensionRef.current,
+          { scaleY: 0 },
+          {
+            scaleY: 1,
+            ease: "none",
+            scrollTrigger: {
+              trigger: timelineExtensionRef.current,
+              start: "top center",
+              end: "bottom center",
+              scrub: 1,
+            },
+          }
+        );
+      }
 
       // Dots animation - each dot appears as scroll reaches it
       dotsRef.current.forEach((dot) => {
@@ -607,6 +626,20 @@ export default function ProjectSection() {
             </svg>
           </a>
         </div>
+      </div>
+
+      {/* Timeline Extension to AboutSection (Desktop only) */}
+      <div className="hidden lg:block absolute left-1/2 bottom-0 w-px -translate-x-1/2 h-32 md:h-48">
+        {/* Background line (gray) */}
+        <div className="w-full h-full bg-[#1a1a1a]" />
+        {/* Animated gradient line - continues to AboutSection */}
+        <div
+          ref={timelineExtensionRef}
+          className="absolute inset-0 w-full h-full origin-top"
+          style={{
+            background: "linear-gradient(to bottom, #06b6d4, #8b5cf6, #f97316)",
+          }}
+        />
       </div>
 
       {/* Decorative Line Numbers */}
