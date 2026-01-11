@@ -251,14 +251,14 @@ export default function Footer() {
           </div>
 
           {/* Payment Methods */}
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             <span className="font-mono text-xs text-[#52525b]">Secure payments:</span>
             <div className="flex items-center gap-2">
               <span className="px-2 py-1 bg-[#141414] border border-[#262626] rounded text-xs text-[#a1a1aa]">Visa</span>
               <span className="px-2 py-1 bg-[#141414] border border-[#262626] rounded text-xs text-[#a1a1aa]">Mastercard</span>
               <span className="px-2 py-1 bg-[#141414] border border-[#262626] rounded text-xs text-[#a1a1aa]">PayPal</span>
             </div>
-          </div>
+          </div> */}
 
           {/* Code Style Message */}
           <div className="font-mono text-xs text-[#52525b] hidden lg:block">

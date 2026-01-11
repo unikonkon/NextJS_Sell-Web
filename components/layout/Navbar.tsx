@@ -6,9 +6,8 @@ import { cn } from "@/lib/utils";
 import { Mail, Menu, X, FolderOpen, Send, Tag } from "lucide-react";
 
 const navItems = [
-  { id: "work", label: "Products", icon: FolderOpen },
-  { id: "categories", label: "Categories", icon: Tag },
-  { id: "contact", label: "Contact", icon: Send },
+  { id: "products", label: "ขายผลิตภัณฑ์ของเรา", icon: FolderOpen },
+  { id: "about", label: "ข้อมูลเพิ่มเติม", icon: Send },
 ];
 
 const storeInfo = {
@@ -191,7 +190,7 @@ export default function Navbar() {
         {/* Desktop Social Links + Cart */}
         <div className="hidden md:flex items-center gap-4">
           {/* Social Links */}
-          <div className="flex items-center gap-2 pr-4">
+          {/* <div className="flex items-center gap-2 pr-4">
             <a
               href={storeInfo.github}
               target="_blank"
@@ -210,7 +209,12 @@ export default function Navbar() {
             >
               <Mail className="w-4 h-4" />
             </a>
-          </div>
+          </div> */}
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+          </svg>
         </div>
 
         {/* Mobile Menu Button */}
@@ -276,7 +280,7 @@ export default function Navbar() {
           <div className="menu-item my-2 h-px bg-[#262626]" />
 
           {/* Contact Info */}
-          <div className="menu-item px-4 py-2 flex flex-col gap-3">
+          {/* <div className="menu-item px-4 py-2 flex flex-col gap-3">
             <span className="text-xs font-mono text-[#52525b] uppercase tracking-wider">Contact</span>
             <a
               href={`mailto:${storeInfo.email}`}
@@ -285,10 +289,10 @@ export default function Navbar() {
               <Mail className="w-4 h-4" />
               <span className="text-sm font-mono">{storeInfo.email}</span>
             </a>
-          </div>
+          </div> */}
 
           {/* Social Links */}
-          <div className="menu-item px-4 py-2 flex items-center gap-3">
+          {/* <div className="menu-item px-4 py-2 flex items-center gap-3">
             <a
               href={storeInfo.github}
               target="_blank"
@@ -300,7 +304,7 @@ export default function Navbar() {
               </svg>
               <span className="text-sm font-mono">GitHub</span>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

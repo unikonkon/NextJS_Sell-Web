@@ -233,7 +233,7 @@ export default function AboutSection() {
         />
         {/* Label */}
         <div className="absolute left-full ml-4 whitespace-nowrap px-2 py-0.5 rounded text-[9px] font-mono bg-[#f97316]/10 text-[#f97316] border border-[#f97316]/30">
-          ABOUT
+          PRODUCTS
         </div>
       </div>
 
@@ -250,45 +250,42 @@ export default function AboutSection() {
               <div className="w-2 h-2 rounded-full bg-[#febc2e]" />
               <div className="w-2 h-2 rounded-full bg-[#28c840]" />
             </div>
-            <span className="text-[#52525b] text-[9px]">about.json</span>
+            <span className="text-[#52525b] text-[9px]">products.json</span>
           </div>
           {/* JSON Content */}
           <div className="text-[#52525b]">{"{"}</div>
           <div className="pl-3">
             <div className="py-0.5">
-              <span className="text-[#ec4899]">&quot;name&quot;</span>
+              <span className="text-[#ec4899]">&quot;type&quot;</span>
               <span className="text-white">: </span>
-              <span className="text-[#10b981]">&quot;Suthep Jantawee&quot;</span>
+              <span className="text-[#10b981]">&quot;Code Marketplace&quot;</span>
               <span className="text-[#52525b]">,</span>
             </div>
             <div className="py-0.5">
-              <span className="text-[#ec4899]">&quot;role&quot;</span>
-              <span className="text-white">: </span>
-              <span className="text-[#10b981]">&quot;Full Stack Developer&quot;</span>
-              <span className="text-[#52525b]">,</span>
-            </div>
-            <div className="py-0.5">
-              <span className="text-[#ec4899]">&quot;experience&quot;</span>
-              <span className="text-white">: </span>
-              <span className="text-[#10b981]">&quot;3+ years&quot;</span>
-              <span className="text-[#52525b]">,</span>
-            </div>
-            <div className="py-0.5">
-              <span className="text-[#ec4899]">&quot;focus&quot;</span>
+              <span className="text-[#ec4899]">&quot;category&quot;</span>
               <span className="text-white">: </span>
               <span className="text-[#06b6d4]">[</span>
             </div>
             <div className="pl-3">
-              <span className="text-[#10b981]">&quot;Frontend&quot;</span>
+              <span className="text-[#10b981]">&quot;Web Apps&quot;</span>
               <span className="text-[#52525b]">, </span>
-              <span className="text-[#10b981]">&quot;Backend&quot;</span>
-              <span className="text-[#52525b]">,</span>
             </div>
             <div className="pl-3">
-              <span className="text-[#10b981]">&quot;Full Stack&quot;</span>
+              <span className="text-[#10b981]">&quot;Mobile Apps&quot;</span>
+              <span className="text-[#52525b]">, </span>
+            </div>
+            <div className="pl-3">
+              <span className="text-[#10b981]">&quot;AI Apps&quot;</span>
+              <span className="text-[#52525b]">,</span>
             </div>
             <div className="py-0.5">
               <span className="text-[#06b6d4]">]</span>
+              <span className="text-[#52525b]">,</span>
+            </div>
+            <div className="py-0.5">
+              <span className="text-[#ec4899]">&quot;readyToUse&quot;</span>
+              <span className="text-white">: </span>
+              <span className="text-[#10b981]">true</span>
             </div>
           </div>
           <div className="text-[#52525b]">{"}"}</div>
@@ -308,30 +305,30 @@ export default function AboutSection() {
               <div className="w-2 h-2 rounded-full bg-[#febc2e]" />
               <div className="w-2 h-2 rounded-full bg-[#28c840]" />
             </div>
-            <span className="text-[#52525b] text-[9px]">stack.ts</span>
+            <span className="text-[#52525b] text-[9px]">services.ts</span>
           </div>
           {/* Code Content */}
           <div>
             <span className="text-[#8b5cf6]">const</span>
             <span className="text-white"> </span>
-            <span className="text-[#ec4899]">technologies</span>
+            <span className="text-[#ec4899]">services</span>
             <span className="text-white"> = </span>
             <span className="text-[#06b6d4]">[</span>
           </div>
           <div className="pl-3 py-0.5">
-            <span className="text-[#10b981]">&quot;Next.js&quot;</span>
+            <span className="text-[#10b981]">&quot;Source Code&quot;</span>
             <span className="text-[#52525b]">,</span>
           </div>
           <div className="pl-3 py-0.5">
-            <span className="text-[#10b981]">&quot;NestJS&quot;</span>
+            <span className="text-[#10b981]">&quot;Full Documentation&quot;</span>
             <span className="text-[#52525b]">,</span>
           </div>
           <div className="pl-3 py-0.5">
-            <span className="text-[#10b981]">&quot;TypeScript&quot;</span>
+            <span className="text-[#10b981]">&quot;Lifetime Support&quot;</span>
             <span className="text-[#52525b]">,</span>
           </div>
           <div className="pl-3 py-0.5">
-            <span className="text-[#10b981]">&quot;PostgreSQL&quot;</span>
+            <span className="text-[#10b981]">&quot;Customization&quot;</span>
           </div>
           <div>
             <span className="text-[#06b6d4]">]</span>
@@ -339,8 +336,8 @@ export default function AboutSection() {
           </div>
           <div className="mt-2 pt-2 border-t border-[#1a1a1a]">
             <span className="text-[#52525b]">{"//"} </span>
-            <span className="text-[#a1a1aa]">Available: </span>
-            <span className="text-[#10b981]">true</span>
+            <span className="text-[#a1a1aa]">Price: </span>
+            <span className="text-[#10b981]">&quot;From ฿1,999&quot;</span>
           </div>
         </div>
       </div>
@@ -351,7 +348,7 @@ export default function AboutSection() {
         <div className="flex items-center justify-center gap-4 mb-6">
           <span className="h-px w-12 bg-linear-to-r from-transparent to-[#f97316]" />
           <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#f97316]">
-            ABOUT
+            PRODUCTS
           </span>
           <span className="h-px w-12 bg-linear-to-l from-transparent to-[#f97316]" />
         </div>
@@ -359,7 +356,7 @@ export default function AboutSection() {
         {/* Title */}
         <h2 className="text-section text-center mb-8">
           <span className="text-white">cat </span>
-          <span className="gradient-text-pink italic">about.json</span>
+          <span className="gradient-text-pink italic">products.json</span>
         </h2>
 
         {/* Terminal Window */}
@@ -371,7 +368,7 @@ export default function AboutSection() {
               <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
               <div className="w-3 h-3 rounded-full bg-[#28c840]" />
             </div>
-            <span className="font-mono text-xs text-[#666] ml-2">suthep@portfolio ~ cat about.json</span>
+            <span className="font-mono text-xs text-[#666] ml-2">code@marketplace ~ cat products.json</span>
             <span className="ml-auto px-2 py-0.5 text-[10px] font-mono bg-[#262626] rounded text-[#666]">
               JSON
             </span>
@@ -380,21 +377,20 @@ export default function AboutSection() {
 
           {/* Terminal Content */}
           <div className="p-6 md:p-8">
-            {/* Bio Description - Comment Style */}
+            {/* Description - Comment Style */}
             <div className="space-y-3 mb-6">
               <div className="flex items-start gap-3">
                 <span className="font-mono text-[#10b981] text-sm shrink-0">{"//"}</span>
                 <p className="text-[#a1a1aa] text-sm leading-relaxed">
-                  I&apos;m a Full Stack Developer with 3+ years of experience in web development.
-                  I have a passion for designing intuitive user interfaces, building with modern
-                  frameworks, and leveraging AI to supercharge developer workflows.
+                  ยินดีต้อนรับสู่ Code Marketplace ของเรา! เราขาย source code ที่พร้อมใช้งาน
+                  สำหรับ Web Apps, Mobile Apps, และ AI Applications ที่สร้างด้วยเทคโนโลยีสมัยใหม่
+                  พร้อม documentation ครบถ้วน
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <span className="font-mono text-[#10b981] text-sm shrink-0">{"//"}</span>
                 <p className="text-[#a1a1aa] text-sm leading-relaxed">
-                  I&apos;m currently looking for roles as a Front-End Developer, Back-End Developer,
-                  or Full Stack Developer.
+                  ทุกโปรเจกต์มาพร้อมกับ source code เต็มรูปแบบ, documentation ละเอียด
                 </p>
               </div>
             </div>
@@ -405,10 +401,10 @@ export default function AboutSection() {
             {/* Stats Row - Inside Terminal */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {[
-                { label: "years", value: "3+", color: "#ec4899", key: "experience" },
-                { label: "projects", value: "15+", color: "#8b5cf6", key: "completed" },
-                { label: "technologies", value: "30+", color: "#06b6d4", key: "mastered" },
-                { label: "companies", value: "2", color: "#10b981", key: "worked" },
+                { label: "products", value: "15+", color: "#ec4899", key: "products" },
+                { label: "categories", value: "6+", color: "#8b5cf6", key: "categories" },
+                { label: "technologies", value: "30+", color: "#06b6d4", key: "technologies" },
+                { label: "customers", value: "100+", color: "#10b981", key: "customers" },
               ].map((stat) => (
                 <div
                   key={stat.key}
@@ -449,3 +445,4 @@ export default function AboutSection() {
     </section>
   );
 }
+

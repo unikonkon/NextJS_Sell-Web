@@ -398,14 +398,14 @@ export default function ProjectSection() {
 
   return (
     <section
-      id="work"
+      id="products"
       ref={sectionRef}
       className="relative py-16 md:py-32 px-6"
     >
       {/* Section Header */}
-      <div ref={headerRef} className="max-w-7xl mx-auto mb-16 text-center">
+      <div ref={headerRef} className="max-w-7xl mx-auto mb-10 text-center">
         {/* Label */}
-        <div className="flex items-center justify-center gap-4 mb-6">
+        <div className="flex items-center justify-center gap-4 mb-2">
           <span
             className="h-px w-12 transition-colors duration-500"
             style={{
@@ -413,10 +413,10 @@ export default function ProjectSection() {
             }}
           />
           <span
-            className="font-mono text-xs uppercase tracking-[0.3em] transition-colors duration-500"
+            className="font-mono text-[8px] uppercase tracking-[0.3em] transition-colors duration-500"
             style={{ color: typeColors[activeFilter]?.hex || "#5ce2f6" }}
           >
-            PERSONAL PROJECT
+            SOURCE CODE STORE
           </span>
           <span
             className="h-px w-12 transition-colors duration-500"
@@ -428,15 +428,33 @@ export default function ProjectSection() {
 
         {/* Title */}
         <h2 className="text-section">
-          <span className="text-white">git status </span>
-          <span className="gradient-text-pink italic">--short personal-project</span>
+          <span className="text-white">Products </span>
+          <span className="gradient-text-pink italic">Source Code พร้อมขาย</span>
         </h2>
 
         {/* Subtitle */}
-        <p className="mt-4 text-[#a1a1aa] max-w-xl mx-auto">
+        <p className="mt-4 text-[#a1a1aa] max-w-3xl mx-auto">
           <span className="font-mono text-[#52525b]">{"// "}</span>
-          A selection of projects that showcase my skills and passion for building digital products
+          ซื้อ Source Code พร้อมใช้งาน
         </p>
+
+        {/* What You Get */}
+        <div className="mt-3 sm:mt-6 flex flex-wrap justify-center gap-2">
+          {[
+            { icon: "📦", text: "สิ่งที่คุณจะได้รับ -> " },
+            { icon: "💻", text: "Full Source Code" },
+            { icon: "📖", text: "คู่มือการใช้งาน" },
+            { icon: "💬", text: "Support คำถามต่างๆ 7 วันหลังการขาย" },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="flex items-center gap-2 px-3 py-1.5 bg-[#0d0d0d] rounded-lg border border-[#1a1a1a] font-mono text-xs text-[#a1a1aa]"
+            >
+              <span>{item.icon}</span>
+              <span>{item.text}</span>
+            </div>
+          ))}
+        </div>
 
         {/* Filter Buttons */}
         <div
@@ -497,9 +515,9 @@ export default function ProjectSection() {
         <div className="mt-4 font-mono text-xs text-[#52525b] flex items-center justify-center gap-2">
           <span className="text-[#10b981]">→</span>
           <span>
-            Showing <span className={typeColors[activeFilter]?.text || "text-[#ec4899]"}>{filteredProjects.length}</span> projects
+            พบ <span className={typeColors[activeFilter]?.text || "text-[#ec4899]"}>{filteredProjects.length}</span> โปรเจกต์พร้อมขาย
             {activeFilter !== "ALL" && (
-              <span> matching <span className="text-[#a1a1aa]">&quot;{activeFilter}&quot;</span></span>
+              <span> ประเภท <span className="text-[#a1a1aa]">&quot;{activeFilter}&quot;</span></span>
             )}
           </span>
         </div>
@@ -591,26 +609,28 @@ export default function ProjectSection() {
         {filteredProjects.length === 0 && (
           <div className="text-center py-16">
             <div className="font-mono text-sm text-[#52525b]">
-              <span className="text-[#ef4444]">ERROR:</span> No projects found matching filter
+              <span className="text-[#ef4444]">ERROR:</span> ไม่พบโปรเจกต์ในหมวดหมู่นี้
             </div>
             <button
               onClick={() => handleFilterChange("ALL")}
-              className="mt-4 px-4 py-2 font-mono text-xs text-[#ec4899] border border-[#ec4899]/30 rounded-lg hover:bg-[#ec4899]/10 transition-colors"
+              className="mt-4 px-4 py-2 font-mono text-xs text-[#ec4899] border border-[#ec4899]/30 rounded-lg hover:bg-[#ec4899]/10 transition-colors cursor-pointer"
             >
-              Reset filter
+              ดูทั้งหมด
             </button>
           </div>
         )}
 
         {/* View All Link */}
-        <div className="mt-16 text-center">
-          <a
-            href="https://github.com/unikonkon"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 font-mono text-sm text-[#a1a1aa] hover:text-white transition-colors group"
+        <div className="mt-16 text-center space-y-4">
+          {/* Contact for custom projects */}
+          <p className="font-mono text-xs text-[#52525b]">
+            <span className="text-[#10b981]">$</span> ต้องการโปรเจกต์ที่ปรับแต่งเฉพาะ? <span className="text-[#a1a1aa]">ติดต่อเราได้เลย</span>
+          </p>
+          {/* <a
+            href="#contact"
+            className="inline-flex items-center gap-2 px-6 py-3 font-mono text-sm text-white bg-gradient-to-r from-[#ec4899] to-[#8b5cf6] rounded-lg hover:opacity-90 transition-opacity group"
           >
-            <span>View all projects on GitHub</span>
+            <span>สนใจสั่งซื้อ / สอบถามเพิ่มเติม</span>
             <svg
               className="w-4 h-4 transition-transform group-hover:translate-x-1"
               fill="none"
@@ -624,7 +644,7 @@ export default function ProjectSection() {
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
-          </a>
+          </a> */}
         </div>
       </div>
 
