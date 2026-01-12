@@ -624,7 +624,7 @@ export default function ProjectSection() {
         <div className="mt-16 text-center space-y-4">
           {/* Contact for custom projects */}
           <p className="font-mono text-xs text-[#52525b]">
-            <span className="text-[#10b981]">$</span> ต้องการโปรเจกต์ที่ปรับแต่งเฉพาะ? <span className="text-[#a1a1aa]">ติดต่อเราได้เลย</span>
+            <span className="text-[#10b981]">$</span> ต้องการโปรเจกต์ที่ปรับแต่งเฉพาะ? <span className="text-[#a1a1aa]">ติดต่อเราได้เลย  ที่ fastwork</span>
           </p>
           {/* <a
             href="#contact"
