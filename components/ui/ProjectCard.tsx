@@ -167,7 +167,7 @@ export default function ProjectCard({ project, index, onOpenGallery }: ProjectCa
 
       {/* Description Card */}
       <div className={cn("mx-4 md:mx-6 mt-3 sm:mt-4 p-2 sm:p-3 rounded-xl", colorClasses.gradient)}>
-        <p className="text-xs sm:text-sm text-[#cacadb] leading-relaxed line-clamp-3">
+        <p className="text-xs sm:text-sm text-[#cacadb] leading-relaxed line-clamp-5">
           {project.description}
         </p>
       </div>
