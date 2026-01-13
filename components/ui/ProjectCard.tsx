@@ -133,8 +133,8 @@ export default function ProjectCard({ project, index, onOpenGallery }: ProjectCa
               {project.index}
             </span>
             {/* Type Badge */}
-            <span className="terminal-badge sm:text-xs text-[6px] uppercase tracking-wider">
-              {project.type}
+            <span className="terminal-badge sm:text-md text-sm uppercase tracking-wider">
+             ID: {project.id}
             </span>
           </div>
           {/* Price Section */}
@@ -167,8 +167,8 @@ export default function ProjectCard({ project, index, onOpenGallery }: ProjectCa
 
       {/* Description Card */}
       <div className={cn("mx-4 md:mx-6 mt-3 sm:mt-4 p-2 sm:p-3 rounded-xl", colorClasses.gradient)}>
-        <p className="text-xs sm:text-sm text-[#cacadb] leading-relaxed line-clamp-5">
-          {project.description}
+        <p className="text-xs sm:text-sm text-[#cacadb] leading-relaxed line-clamp-7 whitespace-pre-line">
+          <span className="text-[#10b981]">{"//"}</span> {project.description.replace(/, /g, ",\n - ")}
         </p>
       </div>
 

@@ -383,7 +383,7 @@ export default function AboutSection() {
                 <span className="font-mono text-[#10b981] text-sm shrink-0">{"//"}</span>
                 <p className="text-[#a1a1aa] text-sm leading-relaxed">
                   ยินดีต้อนรับสู่ Code Marketplace ของเรา! เราขาย source code ที่พร้อมใช้งาน
-                  สำหรับ Web Apps, Mobile Apps, และ AI Applications ที่สร้างด้วยเทคโนโลยีสมัยใหม่
+                  สำหรับ Web Apps, Mobile Apps, ที่สร้างด้วยเทคโนโลยีสมัยใหม่
                   พร้อม documentation ครบถ้วน
                 </p>
               </div>
@@ -396,10 +396,10 @@ export default function AboutSection() {
             </div>
 
             {/* Divider */}
-            <div className="h-px bg-[#262626] my-6" />
+            {/* <div className="h-px bg-[#262626] my-6" /> */}
 
             {/* Stats Row - Inside Terminal */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {[
                 { label: "products", value: "15+", color: "#ec4899", key: "products" },
                 { label: "categories", value: "6+", color: "#8b5cf6", key: "categories" },
@@ -421,7 +421,7 @@ export default function AboutSection() {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             {/* Terminal Footer */}
             <div className="mt-6 pt-4 border-t border-[#262626] flex items-center gap-2 font-mono text-xs text-[#52525b]">

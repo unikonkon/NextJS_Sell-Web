@@ -21,12 +21,12 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "modern-programmer-space",
+    id: "PORTFOLIO-01",
     index: "01",
     type: "PORTFOLIO",
-    title: "Modern Programmer Space",
+    title: "",
     category: "Portfolio Website",
-    description: "เว็บไซต์พอร์ตโฟลิโอธีมอวกาศสร้างด้วย Next.js 16 มาพร้อมพื้นหลังดวงดาวเคลื่อนไหว, UI สไตล์ Terminal, เอฟเฟกต์ Glassmorphism รองรับหลายภาษา (ไทย/อังกฤษ) และ SEO ที่พร้อมใช้งานแก้ไขต่อ",
+    description: "เว็บไซต์พอร์ตโฟลิโอธีมอวกาศสร้างด้วย Next.js 16, มาพร้อมพื้นหลังดวงดาวเคลื่อนไหว UI สไตล์ Terminal, Animation บน Canvas ดาวตก (สุ่มเกิดขึ้น) และ เอฟเฟกต์ Glassmorphism, รองรับแปลภาษา (ไทย/อังกฤษ), รองรับขนาดหน้าจอ Mobile และ SEO ที่พร้อมใช้งานแก้ไขต่อ",
     price: 1100,
     originalPrice: 1499,
     image: "/project/sellweb-portfolio-01/01.png",
@@ -37,21 +37,22 @@ export const projects: Project[] = [
       "/project/sellweb-portfolio-01/04.png",
       "/project/sellweb-portfolio-01/05.png",
       "/project/sellweb-portfolio-01/06.png",
-      "/project/sellweb-portfolio-01/07.png"
+      "/project/sellweb-portfolio-01/07.png",
+      "/project/sellweb-portfolio-01/mobile.png"
     ],
     technologies: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS 4", "Node.js 18+", "Canvas Animation"],
-    features: ["Animated Starfield Background", "Terminal-style UI", "Multi-language Support", "Glassmorphism Effects", "SEO Optimization", "Responsive Design"],
+    features: ["Responsive Design (Mobile-first)","Animated Starfield Background", "Terminal-style UI", "Multi-language Support", "Glassmorphism Effects", "SEO Optimization"],
     demoUrl: "https://sellweb-portfolio-01.vercel.app/",
     colorScheme: "purple",
     featured: true
   },
   {
-    id: "modern-minimalist-programmer",
+    id: "PORTFOLIO-02",
     index: "02",
     type: "PORTFOLIO",
-    title: "Modern Minimalist Programmer",
+    title: "",
     category: "Portfolio Website",
-    description: "เว็บไซต์พอร์ตโฟลิโอสไตล์มินิมอลและโมเดิร์น สร้างด้วย Next.js 16 มาพร้อมธีมมืดสไตล์ Code Editor, เอฟเฟกต์พิมพ์ข้อความแบบ Terminal, อนิเมชัน GSAP, รองรับหลายภาษา (ไทย/อังกฤษ), ไอคอน SVG แบบกำหนดเอง และ SEO ที่พร้อมใช้งานแก้ไขต่อ",
+    description: "เว็บไซต์พอร์ตโฟลิโอสไตล์มินิมอลและโมเดิร์น สร้างด้วย Next.js 16, มาพร้อมธีมมืดสไตล์ Code Editor เอฟเฟกต์พิมพ์ข้อความแบบ Terminal, อนิเมชัน GSAP และเส้นตาม cursor, ไอคอน SVG แบบกำหนดเอง, รองรับแปลภาษา (ไทย/อังกฤษ), รองรับขนาดหน้าจอ Mobile และ SEO ที่พร้อมใช้งานแก้ไขต่อ",
     price: 1100,
     originalPrice: 1499,
     image: "/project/sellweb-portfolio-02/01.png",
@@ -62,7 +63,8 @@ export const projects: Project[] = [
       "/project/sellweb-portfolio-02/04.png",
       "/project/sellweb-portfolio-02/05.png",
       "/project/sellweb-portfolio-02/06.png",
-      "/project/sellweb-portfolio-02/07.png"
+      "/project/sellweb-portfolio-02/07.png",
+      "/project/sellweb-portfolio-02/mobile.png"
     ],
     technologies: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS 4", "GSAP", "Node.js 18+"],
     features: [
@@ -83,12 +85,12 @@ export const projects: Project[] = [
     bestseller: true
   },
   {
-    id: "modern-minimalist-programmer-smooth",
+    id: "PORTFOLIO-03",
     index: "03",
     type: "PORTFOLIO",
-    title: "Modern Minimalist Programmer Smooth",
+    title: "",
     category: "Portfolio Website",
-    description: "เว็บไซต์พอร์ตโฟลิโอสไตล์มินิมอลพร้อมอนิเมชันที่ลื่นไหล สร้างด้วย Next.js 16 มาพร้อมธีมมืดสไตล์ Code Editor, UI แบบ Terminal พร้อมเอฟเฟกต์ Mouse Follow, อนิเมชัน GSAP ที่นุ่มนวล, แสดงประวัติการทำงานแบบ Git Commit History, รองรับหลายภาษา (ไทย/อังกฤษ), และ SEO ที่พร้อมใช้งานแก้ไขต่อ",
+    description: "เว็บไซต์พอร์ตโฟลิโอสไตล์มินิมอลพร้อมอนิเมชันที่ลื่นไหล สร้างด้วย Next.js 16, มาพร้อมธีมมืดสไตล์ Code Editor UI แบบ Terminal พร้อมเอฟเฟกต์ Mouse Follow, อนิเมชัน GSAP ที่นุ่มนวล, แสดงประวัติการทำงานแบบ Git Commit History, รองรับแปลภาษา (ไทย/อังกฤษ), รองรับขนาดหน้าจอ Mobile และ SEO ที่พร้อมใช้งานแก้ไขต่อ",
     price: 1100,
     originalPrice: 1499,
     image: "/project/sellweb-portfolio-03/01.png",
@@ -99,22 +101,23 @@ export const projects: Project[] = [
       "/project/sellweb-portfolio-03/04.png",
       "/project/sellweb-portfolio-03/05.png",
       "/project/sellweb-portfolio-03/06.png",
-      "/project/sellweb-portfolio-03/07.png"
+      "/project/sellweb-portfolio-03/07.png",
+      "/project/sellweb-portfolio-03/mobile.png"
     ],
     technologies: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS 4", "GSAP", "Node.js 18+"],
     features: [
+      "Responsive Design (Mobile-first)",
       "Smooth GSAP Animations",
       "Terminal-style UI with Mouse Follow Effect",
       "Git-style Commit History Display",
       "Dark Theme (Code Editor Style)",
       "Multi-language Support (TH/EN)",
-      "Responsive Design (Mobile-first)",
       "Scroll-triggered Animations",
       "Experience Timeline with Git Commits",
       "Skills Grid with Version Display",
       "SEO Optimization",
       "Custom SVG Icons",
-      "Contact Form"
+      "Contact Form",
     ],
     demoUrl: "https://sellweb-portfolio-03.vercel.app/",
     colorScheme: "indigo",

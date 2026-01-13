@@ -281,7 +281,7 @@ body {
 /* Line Number Style */
 .line-number {
   font-family: var(--font-mono), monospace;
-  font-size: 14px;
+  font-size: 18px;
   color: var(--text-muted);
   letter-spacing: 2px;
 }
